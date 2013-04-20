@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+  <data>
+    <record id="ir_ui_view_project_task_ref_r0" model="ir.ui.view">
+      <field name="inherit_id" ref="project.view_task_form2"/>
+      <field name="name">project.taks.inherit_number</field>
+      <field name="priority">17</field>
+      <field name="model">project.task</field>
+      <field name="arch" type="xml">
+        <data>
+          <field name="name" position="replace">
+            <field name="name" class="oe_inline"/> <field name="ref" class="oe_inline" readonly="1"/>
+          </field>
+        </data>
+      </field>
+      
+    </record>
+  </data>
+</openerp>

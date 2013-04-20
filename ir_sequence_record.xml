@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data noupdate="1">
+    <record id="ir_sequence_task_number_r0" model="ir.sequence">
+      <field name="name">Task Number</field>
+      <field name="active" eval="True"/>
+      <field name="code">project.task_ref</field>
+      <field name="company_id" ref="base.main_company"/>
+      <!-- one2many field 'fiscal_ids' managed on the account.sequence.fiscalyear side -->
+      <field name="implementation">standard</field>
+      <field name="number_increment">1</field>
+      <field name="number_next">1</field>
+      <field name="padding">6</field>
+    </record>
+  </data>
+</openerp>
