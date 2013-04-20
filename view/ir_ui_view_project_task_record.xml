@@ -9,7 +9,7 @@
       <field name="arch" type="xml">
         <data>
           <field name="name" position="replace">
-            <field name="name" class="oe_inline"/> <field name="ref" class="oe_inline" readonly="1"/>
+            <field name="ref" class="oe_inline" readonly="1"/>: <field name="name" class="oe_inline"/>
           </field>
         </data>
       </field>
