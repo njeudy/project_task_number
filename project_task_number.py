@@ -24,9 +24,8 @@ class projectTask(osv.osv):
     def write(self, cr, uid, ids, vals, context=None):
         if context is None:
             context = {}
-        ctx = context.copy()
-        if self.browse(cr, uid, ids, context=ctx)[0]['ref'] == 'NEW':
+        if context != {} and self.browse(cr, uid, ids, context)[0]['ref'] == _('NEW'):
             vals.update({
                 'ref': self.pool.get('ir.sequence').get(cr, uid, 'project.task_ref')
             })
-        return super(projectTask, self).write(cr, uid, ids, vals, context=ctx)
+        return super(projectTask, self).write(cr, uid, ids, vals, context)
