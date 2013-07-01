@@ -6,7 +6,6 @@
       <field name="active" eval="True"/>
       <field name="code">project.task_ref</field>
       <field name="company_id" ref="base.main_company"/>
-      <!-- one2many field 'fiscal_ids' managed on the account.sequence.fiscalyear side -->
       <field name="implementation">standard</field>
       <field name="number_increment">1</field>
       <field name="number_next">1</field>
