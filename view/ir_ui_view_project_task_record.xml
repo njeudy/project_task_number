@@ -12,8 +12,34 @@
             <field name="ref" class="oe_inline" readonly="1"/>: <field name="name" class="oe_inline"/>
           </field>
         </data>
-      </field>
-      
+      </field> 
     </record>
+    <record id="ir_ui_view_project_task_ref_r1" model="ir.ui.view">
+      <field name="inherit_id" ref="project.view_task_tree2"/>
+      <field name="name">project.task.tree.inherit_number</field>
+      <field name="priority">17</field>
+      <field name="model">project.task</field>
+      <field name="arch" type="xml">
+        <data>
+          <field name="name" position="before">
+            <field name="ref"/>
+          </field>
+        </data>
+      </field> 
+    </record>
+    <record id="ir_ui_view_project_task_ref_r2" model="ir.ui.view">
+      <field name="inherit_id" ref="project.view_task_kanban"/>
+      <field name="name">project.task.kanban.inherit_number</field>
+      <field name="priority">17</field>
+      <field name="model">project.task</field>
+      <field name="arch" type="xml">
+        <data>
+          <field name="name" position="replace">
+            #<field name="ref"/>:<field name="name"/>
+          </field>
+        </data>
+      </field> 
+    </record>
+
   </data>
 </openerp>
