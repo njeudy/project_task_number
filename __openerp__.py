@@ -8,7 +8,6 @@
     "installable" : True,
     "active" : False,
     "data": [
-        'ir_sequence_type_record.xml',
         'ir_sequence_record.xml',
         'view/ir_ui_view_project_task_record.xml',
     ],

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openerp>
-  <data>
-    <record id="ir_sequence_type_project_task_r0" model="ir.sequence.type">
-      <field name="name">Project task</field>
-      <field name="code">project.task_ref</field>
-    </record>
-  </data>
-</openerp>
